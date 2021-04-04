@@ -1,7 +1,7 @@
 {
   "name": "leetcode",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "js.js",
   "scripts": {
     "js": "nodemon js.js",
     "ts": "nodemon ts.ts"
