@@ -1,1 +1,1 @@
-const runQuestion = require('./problems/781.js')
+const runQuestion = require('./problems/69.js')
