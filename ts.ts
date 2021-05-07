@@ -1,4 +1,4 @@
-import fn from './problems/690'
+import fn from './problems/19'
 
 fn()
 
