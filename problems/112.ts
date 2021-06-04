@@ -9,28 +9,29 @@ class TreeNode {
   }
 }
 
-function minDepth(root: TreeNode | null): number {
+function hasPathSum(root: TreeNode | null, targetSum: number): boolean {
   if (!root) {
-    return 0
+    return false
   }
-  let min = Infinity
-  const fn = (node: TreeNode, depth: number) => {
+  let result = false
+  const fn = (node: TreeNode, sum: number) => {
+    sum += node.val
     if (node.left || node.right) {
       if (node.left) {
-        fn(node.left, depth + 1)
+        fn(node.left, sum)
       }
       if (node.right) {
-        fn(node.right, depth + 1)
+        fn(node.right, sum)
       }
-    } else {
-      min = Math.min(min, depth)
+    } else if (targetSum === sum) {
+      result = true
     }
   }
-  fn(root, 1)
-  return min
+  fn(root, 0)
+  return result
 };
 
 export default function () {
-  const tree = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)))
-  console.log(minDepth(tree))
+  const tree = new TreeNode(1, new TreeNode(2), new TreeNode(3))
+  console.log(hasPathSum(tree, 5))
 }
