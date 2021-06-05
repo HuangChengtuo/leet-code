@@ -1,1 +1,1 @@
-const fn = require('./problems/22.js')
+const fn = require('./problems/136.js')
