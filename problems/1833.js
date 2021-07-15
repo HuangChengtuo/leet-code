@@ -17,4 +17,6 @@ const maxIceCream = function (costs, coins) {
   return count
 };
 
-console.log(maxIceCream([10, 2, 10, 10, 10, 10, 8, 2, 7, 8], 25))
+export default function () {
+  console.log(maxIceCream([10, 2, 10, 10, 10, 10, 8, 2, 7, 8], 25))
+}

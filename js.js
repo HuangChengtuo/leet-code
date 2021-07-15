@@ -1,1 +1,3 @@
-const fn = require('./problems/1833.js')
+import fn from './problems/1833.js'
+
+fn()
