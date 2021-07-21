@@ -1,15 +1,6 @@
+import { ListNode } from '../DataStructure'
 
-class ListNode {
-  val: number
-  next: ListNode | null
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = (val === undefined ? 0 : val)
-    this.next = (next === undefined ? null : next)
-  }
-}
-
-
-function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
+function getIntersectionNode (headA: ListNode | null, headB: ListNode | null): ListNode | null {
   let p1 = headA
   let p2 = headB
   while (p1 !== p2) {
