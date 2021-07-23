@@ -1,3 +1,3 @@
-import fn from './problems/1877.js'
+import fn from './problems/1893.js'
 
 fn()
