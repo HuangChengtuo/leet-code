@@ -1,3 +1,3 @@
-import fn from './problems/145'
+import fn from './problems/671'
 
 fn()

@@ -2,7 +2,6 @@
   "name": "leetcode",
   "version": "1.0.0",
   "main": "js.js",
-  "type": "module",
   "scripts": {
     "js": "nodemon js.js",
     "ts": "nodemon ts.ts"
