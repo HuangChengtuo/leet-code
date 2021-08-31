@@ -1,1 +1,2 @@
-require('./problems/881')
+const fn = require('./problems/1109')
+fn()
