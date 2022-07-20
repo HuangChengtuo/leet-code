@@ -19,6 +19,7 @@ export class TreeNode {
     this.right = right
   }
 }
+
 export interface Iterator {
   hasNext: () => boolean
   next: () => number
