@@ -1,3 +1,3 @@
-const fn = require('./problems/offer58.js')
+const fn = require('./problems/228.js')
 
-fn()
+console.log(fn())
